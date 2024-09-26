@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="randominteger.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let random=randomlnt()
+        let foo=false
+        let previous
+        let tip;
+        for(let i=0;i<10;i++){
+            let num=+prompt("Enter a number:")
+            if(num>random){
+                if(i>0){
+                tip="Previous number is " +num1+"      "+"Wrong! Number is too big!"
+                }else{
+                 tip="Wrong! Number is too big!"
+                }
+            }else if(num<random){
+                if(i>0){
+                tip="Previous number is " +num1+"      "+"Wrong! Number is too samll!"
+                }else{
+                 tip="Wrong! Number is too samll!"
+                }
+
+            }else{
+                foo=true
+                tip="You are right!"
+                alert(tip)
+                break
+            }
+            alert(tip)
+            previous=num
+        }
+        if(!foo){
+            alert("Frequency run out!")
+        }
+    </script>
+</body>
+</html>
